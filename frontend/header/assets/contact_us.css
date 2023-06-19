@@ -1,0 +1,52 @@
+body{
+    background-color: aqua;
+    
+}
+div{
+    background-color: rgb(185, 180, 180);
+}
+form{
+    height: 200px;
+    width: 500px;
+    background-color: rgb(53, 48, 48);
+}body{
+    background-color: blue;
+    text-align: center;
+     
+}
+ div{
+     background-color: blue;
+ }
+ form{
+     height: 500px;
+     width: 500px;
+     background-color: rgb(53, 48, 48);
+     display: inline-block;
+     border-radius: 10px;
+     color: whitesmoke;
+ }
+ input{
+     height: 50px;
+     width: 500px;
+     color: black;
+     background-color: white;
+     opacity: 3px;
+ }
+ #subject{
+     height: 500px;
+ }
+ textarea{
+     height: 50px;
+     width: 500px;
+     color: black;
+     background-color: white;
+     border-radius: 4px;
+     max-width: 500px;
+     max-height: 400px;
+     min-height: 100px;
+     min-width: 500px;
+ }
+ label {
+     font-size: 20px;
+     color: antiquewhite !important;
+ }
