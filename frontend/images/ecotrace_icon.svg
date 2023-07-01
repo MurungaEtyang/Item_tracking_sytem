@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="background" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1019.3 400.64">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 300px;
+      }
+
+      .cls-1, .cls-2 {
+        font-family: SegoePrint-Bold, 'Segoe Print';
+        font-weight: 700;
+      }
+
+      .cls-2 {
+        font-size: 218.8px;
+      }
+
+      .cls-3 {
+        fill: none;
+        stroke: #000;
+        stroke-miterlimit: 10;
+        stroke-width: 9px;
+      }
+    </style>
+  </defs>
+  <g id="circ">
+    <g id="bin">
+      <image width="512" height="512" transform="translate(317.04 115.87) scale(.23)" xlink:href="../../Downloads/Recycle Bin free icons designed by Ghozi Muhtarom.png"/>
+    </g>
+    <circle class="cls-3" cx="381.22" cy="178.59" r="73.3"/>
+  </g>
+  <g id="E">
+    <text class="cls-1" transform="translate(0 252.1)"><tspan x="0" y="0">E</tspan></text>
+  </g>
+  <g id="c">
+    <text class="cls-2" transform="translate(188.73 240.05)"><tspan x="0" y="0">c</tspan></text>
+  </g>
+  <g id="trace">
+    <text class="cls-2" transform="translate(454.35 232.24)"><tspan x="0" y="0">trace</tspan></text>
+  </g>
+</svg>

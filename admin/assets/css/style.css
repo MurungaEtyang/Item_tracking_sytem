@@ -1,0 +1,79 @@
+
+body{
+font-family: Arial, sans-serif;
+background-color: #f0f0f0;
+margin: 0;
+padding: 0;
+}
+
+.form {
+background-color: #ffffff;
+border-radius: 5px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+padding: 20px;
+max-width: 400px;
+margin: 0 auto;
+margin-top: 50px;
+}
+
+.form p {
+margin: 0;
+font-size: 16px;
+line-height: 1.5;
+}
+
+.label_users, .label_appointment {
+display: block;
+background-color: #f0f0f0;
+border: 1px solid #ccc;
+border-radius: 5px;
+padding: 10px;
+margin-bottom: 10px;
+font-size: 16px;
+text-align: center;
+color: #333;
+}
+
+.users, .appointment {
+display: inline-block;
+margin-right: 10px;
+}
+
+.users span, .appointment span {
+font-weight: bold;
+font-size: 18px;
+}
+
+.users-content, .appointment-content {
+background-color: #f0f0f0;
+border: 1px solid #ccc;
+border-radius: 5px;
+padding: 10px;
+margin-top: 5px;
+}
+
+.button.logout {
+display: inline-block;
+background-color: #f0f0f0;
+border: none;
+border-radius: 5px;
+padding: 10px 20px;
+margin-top: 20px;
+text-decoration: none;
+color: #333;
+font-size: 16px;
+cursor: pointer;
+}
+
+.button.logout:hover {
+background-color: #ccc;
+}
+
+.button.logout a {
+color: #333;
+text-decoration: none;
+}
+
+.button.logout a:hover {
+text-decoration: underline;
+}

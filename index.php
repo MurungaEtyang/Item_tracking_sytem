@@ -1,3 +1,3 @@
 <?php
-    include ("frontend/homepage.php");
+    header("Location: frontend")
 ?>

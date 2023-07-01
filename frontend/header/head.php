@@ -9,4 +9,5 @@
     <link rel="stylesheet" href="assets/contact_us.css">
     <link rel="stylesheet" href="assets/homepage.css">
     <link rel="stylesheet" href="assets/login.css">
+    <style><?php include("../header/assets/login.css");?></style>
 </head>

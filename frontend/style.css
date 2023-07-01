@@ -1,5 +1,5 @@
 body{
-    background-color: aqua;
+    background-color: rgb(255, 255, 255);
     
 }
 div{
@@ -9,4 +9,41 @@ form{
     height: 200px;
     width: 500px;
     background-color: rgb(53, 48, 48);
+}
+ul {
+    list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  opacity: 5;
+}
+li {
+    float: left;
+}
+li a{
+    display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+li a:hover {
+    background-color: #111;
+}
+button {
+    display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  background-color: blue;
+  float : right;
+  text-transform: capitalize;
+}
+img{
+    height: 50px;
+    width: 100px;
 }

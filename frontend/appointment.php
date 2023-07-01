@@ -4,12 +4,13 @@
     $email = isset($_POST['email'])? $_POST['email']: '';
     $company = isset($_POST['company'])? $_POST['company']: '';
     $message = isset($_POST['message'])? $_POST['message']: '';
+    $date = date('Y-m-d H:i:s');
 
     if($firstname && $lastname && $email && $company && $message){
         //do semething
         require "db.php";
         $data = "INSERT INTO appointment (firstname,lastname,email,company,message)  
-        VALUES('$firstname','$lastname','$email', '$company','$message')";
+        VALUES('$firstname','$lastname','$email', '$company','$message','$date')";
         $result = mysqli_query($con, $data);
 
         if ($con->query($data) === TRUE){

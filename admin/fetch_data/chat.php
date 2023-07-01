@@ -1,18 +1,18 @@
 <style><?php include "./assets/css/fetch.css";?></style>
 <?php
     require("../db.php");
-    $sql = "SELECT username, email FROM users ORDER BY username DESC";
+    $sql = "SELECT email, date FROM chatwithus ORDER BY date DESC";
 
     $retrev = $con->query($sql);
-    if ($retrev->num_rows > 0) {
+    if (!empty($retrev) && $retrev->num_rows > 0) {
         echo "<table>";
-        echo "<tr><th>NO</th><th>Username</th><th>Email</th></tr>";
+        echo "<tr><th>NO</th><th>email</th><th>date</th></tr>";
         $count = 1;
         while ($row = $retrev->fetch_assoc()) {
             echo "<tr>";
             echo "<td>".$count."</td>";
-            echo "<td>".$row['username']."</td>";
             echo "<td>".$row['email']."</td>";
+            echo "<td>".$row['date']."</td>";
             echo "</tr>";
             $count++;
         }

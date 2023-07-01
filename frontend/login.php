@@ -1,4 +1,13 @@
-<?php include("header/head.php");?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        <?php include "./header/assets/pop-up.css";?>
+    </style>
+</head>
 <body>
 <?php
     require('db.php');
@@ -25,14 +34,14 @@
                   </div>";
         }
     } else {
-?>  
+?>
     <form class="form" method="post" name="login">
         <h1 class="login-title">Login</h1>
         <input type="text" class="login-input" name="username" placeholder="Username" autofocus="true"/>
         <input type="password" class="login-input" name="password" placeholder="Password"/>
         <input type="submit" value="Login" name="submit" class="login-button"/>
         <!-- <p class="link">Don't have an account? <a href="registration.php">Registration Now</a></p> -->
-  </form>
+    </form>
 <?php
     }
 ?>

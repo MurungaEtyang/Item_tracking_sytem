@@ -8,7 +8,7 @@
 <body>
 <?php
     require('db.php');
-    // When form submitted, insert values into the database.
+
     if (isset($_REQUEST['username'])) {
         // removes backslashes
         $username = stripslashes($_REQUEST['username']);
@@ -25,7 +25,7 @@
         if ($result) {
             echo "<div class='form'>
                   <h3>You are registered successfully.</h3><br/>
-                  <p class='link'>Click here to <a href='login.php'>Login</a></p>
+                  <p class='link'>Click here to <a href='dashboard.php'>go back</a></p>
                   </div>";
         } else {
             echo "<div class='form'>
@@ -36,11 +36,11 @@
     } else {
 ?>
     <form class="form" action="" method="post">
-        <h1 class="login-title">Registration</h1>
+        <h1 class="login-title">Add users</h1>
         <input type="text" class="login-input" name="username" placeholder="Username" required />
         <input type="text" class="login-input" name="email" placeholder="Email Adress">
         <input type="password" class="login-input" name="password" placeholder="Password">
-        <input type="submit" name="submit" value="Register" class="login-button">
+        <input type="submit" name="submit" value="add users" class="login-button">
         <!-- <p class="link">Already have an account? <a href="login.php">Login here</a></p> -->
     </form>
 <?php

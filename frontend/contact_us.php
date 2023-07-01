@@ -4,22 +4,24 @@
     $email = isset($_POST['email'])? $_POST['email']: '';
     $subject = isset($_POST['subject'])? $_POST['subject']: '';
     $message = isset($_POST['message'])? $_POST['message']: '';
-
-    if($firstname && $lastname && $email && $subject && $message){
-        require "db.php";
-        $data = "INSERT INTO contact_us (firstname,lastname,email,subject,message)  
-        VALUES('$firstname','$lastname','$email', '$subject','$message')";
-        // $result = mysqli_query($con, $data);
-
-        if ($con->query($data) === TRUE){
-            echo"<div><p>Thank you for contact us we'll get back to you</p></div>";
+    echo "hello";
+        if($firstname && $lastname && $email && $subject && $message){
+            echo "hello";
+            require "db.php";
+            $data = "INSERT INTO contact_us (firstname,lastname,email,subject,message)  
+            VALUES('$firstname','$lastname','$email', '$subject','$message')";
+            $result = mysqli_query($con, $data);
+            echo "hello";
+            if ($con->query($data) === TRUE){
+                echo"<div><p>Thank you for contacting us</p></div>";
+            }else{
+                echo "<div><p>your appointmet has faild kindly try again</p></div>";
+            }
         }else{
-            echo '<script>alert("error found")</script>';
+            echo "<div><p>All fields are required</p></div>";
         }
-    }else{
-        echo "<div><p>All fields are required</p></div>";
-    }
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -44,7 +46,7 @@
             <input type="text" placeholder = "enter last name" class = "lastname" name = "lastname">
             <label for="email">email</label>
             <input type="email" placeholder = "enter email" class = email name = "email">
-            <label for="company">subject</label>
+            <label for="subject">subject</label>
             <input type="text" placeholder = "enter your subject" class = "subject" name = "subject">
             <label for="textarea">message</label>
             <textarea name="message" id="message" cols="30" rows="10"  placeholder = "write here"></textarea>
